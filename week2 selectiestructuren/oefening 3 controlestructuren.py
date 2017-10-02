@@ -2,5 +2,6 @@
 #gepaste melding af.
 
 geboortejaar = int(input("Geef je geboortejaar"))
-print("test")
-# if (geboortejaar)
+
+import datetime
+ if (geboortejaar> )
