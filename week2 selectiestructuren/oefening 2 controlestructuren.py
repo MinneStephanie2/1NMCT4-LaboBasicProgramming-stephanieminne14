@@ -3,6 +3,8 @@
 
 getal = float (input ("geef een decimaal getal"))
 
-if (getal1 == getal2):
-    print("getal {0} is gelijk als {1}".format(getal1,getal2))
-else: print("de getallen zijn verschillend")
+resultaat = getal/2
+if (resultaat % 2)== 0:
+    print("je heb een even getal")
+else: print("je hebt een oneven getal")
+
