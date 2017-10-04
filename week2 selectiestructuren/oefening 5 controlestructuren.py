@@ -1,3 +1,14 @@
-score = float(input("Geef uw score: "))
+x = float(input("Geef uw score: "))
 
-if
+import math
+
+if (x < 9.5):
+
+    print("score: {0} \nHelaas, Volgende keer beter!".format(math.floor(x)))
+else:
+
+    print("score: {0} \nU bent geslaagd!".format(math.ceil(x)))
+
+
+
+# print ("score = {0}".format(score))
