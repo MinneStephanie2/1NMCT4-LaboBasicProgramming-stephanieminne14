@@ -1,21 +1,24 @@
-keuze = input("Welke eeneheid gebruikt u? (c: celsius, f: fahrenheit)")
-f = 1
-F = 1
-c= 2
-C =2
+keuze = int (input("Welke eeneheid gebruikt u? (1: celsius, 2: fahrenheit)"))
 
-if (keuze == 1):
-    fahrenheid = int(input("geef je tempertatuur in fahreneheid: "))
-    def geef_celsius (fahrenheid):
-        berekening_fahrenheid = (fahrenheid-32)*5/9
-        print("je temperatuur in graden celsius is {0}".format(berekening_fahrenheid))
+
+def geef_celsius(keuze):
+    fahrenheid = (celsius - 32) * 5 / 9
+    print("je temperatuur in graden fahrenheid is {0}".format(fahrenheid))
     print(geef_celsius(fahrenheid))
-elif (keuze == 2):
-    celsius = int (input("geef je temperatuur in graden celsius: "))
-    def geef_fahrenheit (celsius):
-        berekening_celsius = (celsius*9/5)+32
-        print("je temperatuur in fahrenheid {0}".format(berekening_celsius))
+
+
+def geef_fahrenheit(keuze):
+    celsius = (fahrenheid * 9 / 5) + 32
+    print("je temperatuur in celsius {0}".format(celsius))
     print(geef_fahrenheit(celsius))
+
+if (keuze == 2):
+    fahrenheid = (int(input("geef je tempertatuur in fahreneheid: ")))
+    geef_fahrenheit(keuze)
+
+elif (keuze == 1):
+    celsius = (int (input("geef je temperatuur in graden celsius: ")))
+    geef_celsius(keuze)
 else:
     print("Dit is geen geldige waarde")
 
