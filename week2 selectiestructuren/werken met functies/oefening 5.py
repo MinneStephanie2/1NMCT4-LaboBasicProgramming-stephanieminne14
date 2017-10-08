@@ -1,10 +1,12 @@
-maandnummer = int (input("geef een maandnummer"))
-list = ["januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "novermber", "december"]
-maand = list [maandnummer]
-def juisteMaandnummer (maandnummer):
-    if (maandnummer> 12)or (maandnummer <0):
-        print("ongeldig maandnummer!")
-    else:
-        print ("Dit maandnummer komt overeen met {0}".format(maand)
-#list gebruiken
- print(juisteMaandnummer(maandnummer))
+maand = (int (input("Geef je maandnummer: ")))
+
+def juisteMaandnummer (maand):
+   maand = maand - 1
+   maanden = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober",
+              "November", "December"]
+   if (maand<= 12 and maand >=0):
+         print("de maand is {0:s}".format(maanden[maand]))
+   else:
+        print ("Dit is een ongeldig getal")
+
+print(juisteMaandnummer(maand))
