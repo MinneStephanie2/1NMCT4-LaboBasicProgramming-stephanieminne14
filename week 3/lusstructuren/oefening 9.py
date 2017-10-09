@@ -13,7 +13,12 @@ def nummer_raden ():
     else:
         print(getal)
         print("Goed geraden!")
+
 while gok != getal:
     nummer_raden()
-nummer_raden()
-print (getal)
+    if (gok == getal): break;
+
+
+
+
+
